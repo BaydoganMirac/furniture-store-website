@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins&display=swap);
+
+:root {
+    --hardalimsi-yellow : #ffefba;
+    --dark-blue : #0f0c29;
+    --dark-blue-soft : #302b63;
+}
+body{
+    font-family:Poppins;
+    margin:0;
+    color: var(--dark-blue-soft);
+    background: linear-gradient(to right, var(--hardalimsi-yellow), white);
+}
+.bg-secondary-c{
+    background-color: var(--dark-blue);
+}
+
+.text-white{
+    color: white !important;
+}
+.text-black{
+    color: black;
+}
+a{
+    color: white;
+    text-decoration: none !important;
+}
+.float-right{
+    float: right;
+}
+.top-bar{
+    display: block;
+    color: white;
+    width: 100%;
+    background: linear-gradient(to left, var(--dark-blue), var(--dark-blue-soft) , transparent);
+}
+.top-bar-inside{
+    padding:3px;
+    padding-left: 20px;
+    text-align: left;
+    border-top-left-radius: 25px;
+    width: 50%;
+    margin-left:auto;
+    margin-right:0;
+}
+.vhr{  
+    border-right: 1px solid white;
+    padding: 10px;
+}
+.navbar-toppx{
+    margin-top:30px !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.navbar{
+    min-height: 100px !important;
+    background: linear-gradient(to left, var(--dark-blue), var(--dark-blue-soft) ,var(--dark-blue));
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+.category{
+    color:var(--dark-blue);
+    margin: 10px;
+}
+.category-img{
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    transition:0.5s linear;
+}
+.category-img:hover{
+    box-shadow:5px 5px 20px 0px #000;
+
+    transition:0.5s linear;
+}
+.category-content{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.category-card{
+    margin: 30px;
+}
+.category-card::after{
+    content: attr(data-desc);
+    position: absolute;
+    text-align: center;
+    color: white;
+    border-bottom-right-radius: 30px;
+    font-size: 30px;
+    width: 300px;
+    height: 40px;
+    margin-top: 260px;
+    margin-left: -300px;
+    background-image: linear-gradient(to right,transparent, var(--dark-blue), var(--dark-blue));
+}
+
+.announcements-header{
+    color : var(--primary-color);
+}
+
+
+footer{
+    margin-top: 150px;
+    background: linear-gradient(to left, var(--dark-blue), var(--dark-blue-soft), var(--dark-blue));
+    height: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+    padding: 30px;
+}
+footer>div{
+    padding: 30px;
+}
+a[data-desc~="Facebook"]{
+    font-size:30px;
+    margin: 10px;
+}
+a[data-desc~="Instagram"]{
+    font-size:30px;
+    margin: 10px;
+}
+.margin-top-150{
+    margin-top:150px;
+}
+.margin-left-20{
+    margin-left:20px;
+}
+.breadcrumb{
+    background-image: linear-gradient(to right, var(--dark-blue), var(--dark-blue-soft), var(--dark-blue));
+}
+.breadcrumb-item.active{
+    color : #ccc;
+}
+.products-overlay{
+    content: attr(data-desc);
+    position: absolute;
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    width: 300px;
+    height: 30px;
+    margin-left: 0px;
+    background-image: linear-gradient(to right, var(--dark-blue), var(--dark-blue-soft), transparent);
+}
+.margin-top--10{
+    margin-top: -10px;
+}
+
+.product-card:hover{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+.card-header{
+    background-image: linear-gradient(to right, var(--dark-blue), var(--dark-blue-soft), var(--dark-blue));
+}
+a:hover{
+    color: white;
+
+}
+.card{
+    background: transparent !important;
+}
+@media screen and (max-width : 960px){
+    .top-bar{
+        display: none;
+    }
+} 
+.jumbotron{
+    background-color: transparent !important;
+}
+.text-bg{
+    color: var(--dark-blue) !important;
+}
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
