@@ -2,6 +2,7 @@
 
 Furniture store website (corporate website) developed with php. **Developed at 2018**.
 I was developed this website improve my skills. Please don't be afraid for edit this code. Feel free to change anything.
+I know guys this design so bad. :D You do better and open PR :))
 
 ## Installation
 
